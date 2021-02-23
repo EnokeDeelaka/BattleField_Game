@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="452.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <Text layoutX="159.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ready Your Weapons">
+      <font>
+         <Font name="System Bold" size="30.0" />
+      </font>
+   </Text>
+   <AnchorPane fx:id="PlayerOnePanel" layoutX="39.0" layoutY="128.0" prefHeight="228.0" prefWidth="240.0" style="-fx-background-color: brown;">
+      <Text fill="WHITE" layoutX="27.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T56">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tank">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multi_Barrel">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="31.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pistol">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="29.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bomb">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="T56Check" layoutX="197.0" layoutY="14.0" mnemonicParsing="false" onAction="#AllCheckbox" onMouseClicked="#PlayerACheckT56">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="TankCheck" layoutX="197.0" layoutY="52.0" mnemonicParsing="false" onAction="#AllCheckbox" onMouseClicked="#PlayerACheckTank">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="MultiCheck" layoutX="197.0" layoutY="93.0" mnemonicParsing="false" onAction="#AllCheckbox" onMouseClicked="#PlayerACheckMulti">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="PistolCheck" layoutX="197.0" layoutY="135.0" mnemonicParsing="false" onAction="#AllCheckbox" onMouseClicked="#PlayerACheckPistol">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="BombCheck" layoutX="197.0" layoutY="175.0" mnemonicParsing="false" onAction="#AllCheckbox" onMouseClicked="#PlayerACheckBomb">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+   </AnchorPane>
+   <AnchorPane fx:id="PlayerTwoPanel" layoutX="322.0" layoutY="128.0" prefHeight="228.0" prefWidth="240.0" style="-fx-background-color: brown;">
+      <Text fill="WHITE" layoutX="21.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T56">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tank">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multi_Barrel">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="21.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pistol">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="18.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bomb">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="T56Check2" layoutX="199.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#PlayerBCheckT56">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="TankCheck2" layoutX="199.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#PlayerBCheckTank">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="MultiCheck2" layoutX="199.0" layoutY="93.0" mnemonicParsing="false" onMouseClicked="#PlayerBCheckMulti">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="PistolCheck2" layoutX="199.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#PlayerBCheckPistol">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <CheckBox fx:id="BombCheck2" layoutX="199.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#PlayerBCheckBomb">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+   </AnchorPane>
+   <Text layoutX="130.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player A">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Text layoutX="407.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Button fx:id="BtnStart" layoutX="253.0" layoutY="384.0" mnemonicParsing="false" onAction="#BtnClickOnAction" onMouseClicked="#BattleStartMouseClicked" style="-fx-background-color: black;" text="Battle Start" textFill="WHITE">
+      <font>
+         <Font size="17.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>
